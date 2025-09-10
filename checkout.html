@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SivanFood Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+
+ <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/kgqwH1Wy/20250423-185443.png" alt="SivanFood Logo" height="50px">
+        </div>
+        <a href="cart.html" class="back-btn">← Back to Cart</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+
+        <form id="checkout-form">
+            <section class="form-section">
+                <h2>Customer Information</h2>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Sivan Max" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 705 888 36821" required />
+            </section>
+
+            <section class="form-section">
+                <h2>Delivery Options</h2>
+                <label>
+                    <input type="radio" name="delivery" value="standard" checked />
+                    Standard Delivery (Delivered within 24 hours - Extra $2)
+                </label>
+
+                <label>
+                    <input type="radio" name="delivery" value="instant" />
+                    Instant Delivery (Delivered Immediately after Order - Extra $4)
+                </label>
+
+                <label>
+                    <input type="radio" name="delivery" value="pickup" />
+                    Pick up (Pick up your order from our store - Free)
+                </label>
+            </section>
+
+            <section class="form-section">
+                <h2>Payment Method</h2>
+                <label>
+                    <input type="radio" name="payment" value="card" checked />
+                    Credit/Debit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="paypal" />
+                    PayPal
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="cod" />
+                    Cash on Delivery
+                </label>
+            </section>
+
+            <section class="form-section" id="card-details-section">
+                <h3>Card Details</h3>
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="cardNumber" placeholder="1234 5678 9012 3456" />
+
+                <div class="card-row">
+                    <div>
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="month" id="expiry-date" name="expiryDate" />
+                    </div>
+
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" name="cvv" maxlength="4" placeholder="123" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section order-summary">
+                <h2>Order Summary</h2>
+                <div id="order-summary-items"></div>
+                <p class="order-total" id="order-total"></p>
+            </section>
+
+            <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+
+  <script src="checkout.js"></script>
+
+</body>
+</html>

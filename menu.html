@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SivanFood Menu</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/kgqwH1Wy/20250423-185443.png" alt="SivanFood Logo" height="50px">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">Help Center</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">Help Center</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-container">
+        <h1 class="menu-title">Our Menu</h1>
+        <p class="menu-description">Explore our diverse selection of authentic Nigerian cuisine and international favorites, prepared with fresh ingredients and traditional recipes.</p>
+
+        <div class="food-container1">
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/2178909957/photo/spaghetti-mixed-with-vegetable-sauce-and-beef-chopsticks.jpg?s=612x612&w=0&k=20&c=_WuQX9AtmbfKAOkMK-Xy72qioYDOmtXHMHXnVyvtySE=" alt="Spaghetti">
+                <h2 class="food-name">Spaghetti</h2>
+                <p class="food-price">$5.00</p>
+                <p class="food-details">Tender spaghetti tossed with sautéed green beans.</p>
+                <button onclick="addToCart(1, 'Spaghetti', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grilled Chicken">
+                <h2 class="food-name">Grilled Chicken</h2>
+                <p class="food-price">$8.00</p>
+                <p class="food-details">Juicy grilled chicken breast seasoned with spices. Includes fries and salad.</p>
+                <button onclick="addToCart(2, 'Grilled Chicken', 8.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Burger">
+                <h2 class="food-name">Burger</h2>
+                <p class="food-price">$6.50</p>
+                <p class="food-details">Thick beef patty in a bun with cheese, lettuce, tomatoes, and sauce.</p>
+                <button onclick="addToCart(3, 'Burger', 6.50)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1127727388/photo/nigerian-jollof-rice-with-chicken-thigh.jpg?s=612x612&w=0&k=20&c=RS-SQmSSOR1UMlFDXEoHWp2eRqiLfYumbOaYjB3df4I=" alt="Jollof Rice">
+                <h2 class="food-name">Jollof Rice</h2>
+                <p class="food-price">$5.00</p>
+                <p class="food-details">Smoky jollof rice served with tender, spiced grilled chicken.</p>
+                <button onclick="addToCart(4, 'Jollof Rice', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1067935326/photo/chicken-and-sausage-shawarma.webp?a=1&b=1&s=612x612&w=0&k=20&c=nJH9FSaLqgFTCG9H0w7DavrIEjV3rt9ajv0UvfH-6Vg=" alt="Shawarma">
+                <h2 class="food-name">Shawarma</h2>
+                <p class="food-price">$4.00</p>
+                <p class="food-details">Juicy grilled chicken or beef, wrapped in warm pita with fresh veggies, garlic sauce, and tahini.</p>
+                <button onclick="addToCart(5, 'Shawarma', 4.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1327486579/photo/abak-soup-with-fufu-or-pounded-yam.jpg?s=612x612&w=0&k=20&c=i9WYYbJ4WeHdMXXiLFKFJL8yNyRQr8shPzsOAoc_SKo=" alt="Pounded Yam">
+                <h2 class="food-name">Pounded Yam & Efo</h2>
+                <p class="food-price">$5.00</p>
+                <p class="food-details">Smooth pounded yam served with rich efo riro and hearty cuts of meat.</p>
+                <button onclick="addToCart(6, 'Pounded Yam & Efo', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://plus.unsplash.com/premium_photo-1733259709671-9dbf22bf02cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHBpenphfGVufDB8fDB8fHww" alt="Pizza">
+                <h2 class="food-name">Pizza</h2>
+                <p class="food-price">$6.00</p>
+                <p class="food-details">Freshly baked perfection Pizza - Hot, cheesy, and loaded with your favorite toppings.</p>
+                <button onclick="addToCart(7, 'Pizza', 6.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/135170559/photo/icecream-three-balls-in-wafer.webp?a=1&b=1&s=612x612&w=0&k=20&c=u1HZhCHY1V3n-6X9lm8E4hh1PAZWIdx2E_pvvdfy3m8=" alt="Ice Cream">
+                <h2 class="food-name">Ice Cream</h2>
+                <p class="food-price">$5.00</p>
+                <p class="food-details">Creamy, cold, and irresistibly sweet — a perfect scoop of happiness in every bite.</p>
+                <button onclick="addToCart(8, 'Ice Cream', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1421879295/photo/cornish-pasty-baked-pie-filled-with-meat-and-potatoes-closeup-on-the-wooden-board-horizontal.jpg?s=612x612&w=0&k=20&c=FWOGmCBG9oDDhRjVS5YKAZjh_gsjnKKXcKWawfrK3Ok=" alt="Meat Pie">
+                <h2 class="food-name">Meat Pie</h2>
+                <p class="food-price">$4.00</p>
+                <p class="food-details">Flaky pastry filled with seasoned minced meat and veggies — perfect on the go.</p>
+                <button onclick="addToCart(9, 'Meat Pie', 4.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1169415844/photo/regional-african-food.jpg?s=612x612&w=0&k=20&c=Hsvgt4d292mgyw97U_jcxoGAR5D6SEp7VGDLzd6qhAA=" alt="White Rice">
+                <h2 class="food-name">White Rice & Chicken</h2>
+                <p class="food-price">$5.00</p>
+                <p class="food-details">Fluffy rice served with rich tomato stew and a hearty cut of tender meat.</p>
+                <button onclick="addToCart(10, 'White Rice & Chicken', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1583946193644-49fe1fe958cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmlnZXJpYSUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="Fried Rice">
+                <h2 class="food-name">Fried Rice</h2>
+                <p class="food-price">$5.50</p>
+                <p class="food-details">Colorful, tasty fried rice with veggies, and a touch of spice with fried chicken.</p>
+                <button onclick="addToCart(11, 'Fried Rice', 5.50)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1327486548/photo/nigerian-okra-soup-with-garri.jpg?s=612x612&w=0&k=20&c=AW5kYEgtpxoWw1198IiLQ-cyDj0ieCH9XWTiZU-ZKWI=" alt="Eba & Efo">
+                <h2 class="food-name">Eba & Efo</h2>
+                <p class="food-price">$4.00</p>
+                <p class="food-details">Smooth cassava dough served with rich, spiced spinach stew and assorted meats or fish.</p>
+                <button onclick="addToCart(12, 'Eba & Efo', 4.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1398349488/photo/amala-and-ewedu.jpg?s=612x612&w=0&k=20&c=-DTj5xJ2tCCTiLj4iTXi8n1iTa23yjvQchmPxt09V4c=" alt="Amala & Ewedu">
+                <h2 class="food-name">Amala & Ewedu</h2>
+                <p class="food-price">$4.00</p>
+                <p class="food-details">Soft yam flour paired with silky jute leaf soup and savory stew with assorted meats.</p>
+                <button onclick="addToCart(13, 'Amala & Ewedu', 4.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/990017916/photo/nigerian-brown-beans-pottage-with-plantain.jpg?s=612x612&w=0&k=20&c=oz8x-JNrKS4xMC8lRDffOdfmcN9Rbmr3x2Lk14KLCCs=" alt="Beans & Fried Plantain">
+                <h2 class="food-name">Beans & Fried Plantain</h2>
+                <p class="food-price">$3.00</p>
+                <p class="food-details">Soft, seasoned beans paired with crispy, golden fried plantains.</p>
+                <button onclick="addToCart(14, 'Beans & Fried Plantain', 3.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/1255115646/photo/nigeran-deep-fried-beancake-akara-with-custard.jpg?s=612x612&w=0&k=20&c=azbssSAqIVZ-YuebzqU__sRVbSJAn3r-yO7LzkljxLQ=" alt="Beans Cake & Custard">
+                <h2 class="food-name">Beans Cake & Custard</h2>
+                <p class="food-price">$3.00</p>
+                <p class="food-details">Crispy akara paired with warm, creamy custard — a cozy, satisfying combo.</p>
+                <button onclick="addToCart(15, 'Beans Cake & Custard', 3.00)">Add to Cart</button>
+            </div>
+
+            <div class="food-card">
+                <img src="https://media.istockphoto.com/id/2178986948/photo/mashed-potatoes-and-chicken-sauce.jpg?s=612x612&w=0&k=20&c=aKc7XTre3qFLbnahfBgHquqalQW82X02SWgLAxhFsWI=" alt="Mashed Potato & Chicken Sauce">
+                <h2 class="food-name">Mashed Potato & Chicken Sauce</h2>
+                <p class="food-price">$3.50</p>
+                <p class="food-details">Smooth, buttery mashed potatoes topped with rich, savory chicken sauce.</p>
+                <button onclick="addToCart(16, 'Mashed Potato & Chicken Sauce', 3.50)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" class="scroll-top-btn" id="scrollBtn" title="Back to Top">↑</button>
+
+
+  <script src="menu.js"></script>
+
+</body>

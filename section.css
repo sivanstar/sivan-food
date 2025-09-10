@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    background-color: #f4ebeb;
+}
+
+.top-section-container {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    border: 1em;
+    border-bottom: 1px solid black
+
+}
+
+.left-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.right-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.button-container{
+    width: fit-content;
+    padding: 0.3rem;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+form {
+    position: relative;
+    width: 300px;
+  }
+  
+  input[type="search"] {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    font-size: 16px;
+  }
+  
+  form i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}

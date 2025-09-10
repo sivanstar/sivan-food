@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SivanPay Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+ <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/kgqwH1Wy/20250423-185443.png" alt="SivanFood Logo" height="50px">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">Help Center</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">Help Center</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cart Content -->
+    <div class="cart-page">
+        <div class="cart-container">
+            <h1>Your Cart</h1>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-total" id="cart-total"></div>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="order-now">Order Now</button>
+        </div>
+    </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>

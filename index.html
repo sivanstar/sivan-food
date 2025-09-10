@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SivanFood</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/kgqwH1Wy/20250423-185443.png" alt="SivanFood Logo" height="50px">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">Help Center</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">Help Center</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="text fade-in">
+            <div class="row">
+                <div class="row-1">
+                    <h1>Welcome to SivanFood</h1>
+                    <small>Your one-stop destination for mouth-watering dishes including spaghetti, chicken, jollof rice, burgers, and much more, all prepared with the finest ingredients.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Images -->
+        <div class="circle fade-in">
+            <div class="circle-image fade-in-left">
+                <img src="https://i.postimg.cc/DZLrC8FS/20250429-140231.png" alt="Woman eating burger">
+                <h1>Savor the taste of our succulent Burger</h1>
+            </div>
+            <div class="circle-image fade-in-right">
+                <img src="https://i.postimg.cc/902GsCFJ/20250429-144327.png" alt="Man eating pizza">
+                <h2>Enjoy the perfect taste of our Pizza</h2>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="text fade-in">
+            <div class="row">
+                <div class="row-1">
+                    <h1>About Us</h1>
+                    <small>At SivanFood, we are passionate about serving delicious, homemade meals inspired by local and international flavors. From spicy Jollof rice to creamy pasta, our menu celebrates comfort and culture in every bite. We focus on fresh ingredients, authentic recipes, and warm delivery service. Whether you're craving a quick lunch or a family dinner, SivanFood is here to serve you with a taste you can trust.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kitchen Section -->
+        <section class="kitchen-section fade-in">
+            <h2 class="kitchen-title">SivanFood Kitchen</h2>
+            <div class="kitchen-image-container">
+                <img src="https://media.istockphoto.com/id/973925610/photo/buffet-of-nigerian-food-at-newborn-dedication.jpg?s=612x612&w=0&k=20&c=IHdaRYc3_LvsXBT_H6mjswK68rnjSAxbCorel1kOOMY=" alt="SivanFood Kitchen">
+                <p class="kitchen-caption">Bold flavors, home-cooked vibes — every bite tells a story at SivanFood Kitchen.</p>
+            </div>
+        </section>
+
+        <!-- Featured Dishes -->
+        <section class="text fade-in">
+            <div class="row">
+                <div class="row-1">
+                    <h1>Featured Dishes</h1>
+                    <small>Explore our most popular Nigerian and international dishes, prepared with authentic recipes and fresh ingredients.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Cards -->
+        <section id="menu" class="food-container">
+            <div class="food-card fade-in">
+                <img src="https://media.istockphoto.com/id/2178909957/photo/spaghetti-mixed-with-vegetable-sauce-and-beef-chopsticks.jpg?s=612x612&w=0&k=20&c=_WuQX9AtmbfKAOkMK-Xy72qioYDOmtXHMHXnVyvtySE=" alt="Spaghetti">
+                <h2 class="food-name">Spaghetti</h2>
+                <p class="food-price">$5.00</p>
+                <p class="food-details">Tender spaghetti tossed with sautéed green beans.</p>
+            </div>
+
+            <div class="food-card fade-in">
+                <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grilled Chicken">
+                <h2 class="food-name">Grilled Chicken</h2>
+                <p class="food-price">$8.00</p>
+                <p class="food-details">Juicy grilled chicken breast seasoned with spices.</p>
+            </div>
+
+            <div class="food-card fade-in">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Burger">
+                <h2 class="food-name">Burger</h2>
+                <p class="food-price">$6.50</p>
+                <p class="food-details">Thick beef patty in a bun with cheese, lettuce, tomatoes, and sauce.</p>
+            </div>
+
+            <div class="food-card fade-in">
+                <img src="https://images.unsplash.com/photo-1583946193644-49fe1fe958cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmlnZXJpYSUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="Fried Rice">
+                <h2 class="food-name">Fried Rice</h2>
+                <p class="food-price">$5.50</p>
+                <p class="food-details">Colorful, tasty fried rice with veggies, and a touch of spice with fried chicken.</p>
+            </div>
+        </section>
+
+        <!-- Shop Now Button -->
+        <div class="shopnow fade-in">
+            <a href="#menu" class="shop-now-btn">View Full Menu</a>
+        </div>
+
+        <!-- Customer Testimonials Section -->
+        <section class="text fade-in">
+            <div class="row">
+                <div class="row-1">
+                    <h1>What Our Customers Say About Us</h1>
+                    <small>We value our customers' feedback and strive to provide the best dining experience possible.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Cards -->
+        <div class="testimonial-card fade-in">
+            <p class="testimonial-text">"SivanFood is absolutely amazing! The taste reminds me of home, and the delivery is always quick. Highly recommend!"</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-author">– Hassan A., Ilorin</p>
+        </div>
+
+        <div class="testimonial-card fade-in">
+            <p class="testimonial-text">"Super impressed with the burger quality. Fresh and perfectly made."</p>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-author">– Mukthar O., Lagos</p>
+        </div>
+
+        <!-- Quick Delivery Section -->
+        <div class="quick-delivery-container fade-in">
+            <div class="delivery-image">
+                <img src="https://media.istockphoto.com/id/1356318701/photo/contemporary-art-collage-of-male-hand-holding-burger-sticking-out-phone-screen-isolated-over.webp?a=1&b=1&s=612x612&w=0&k=20&c=9zoJRlEHFbrGNpxMifSIwRO9SF-6R7w6-m_TLcNBxR4=" alt="Delivery">
+            </div>
+            <div class="delivery-content">
+                <h2>🚚 Quick & Reliable Delivery</h2>
+                <p>Enjoy fast and safe delivery of your meals right to your doorstep. We ensure your food arrives hot and fresh, always.</p>
+                <button onclick="alert('Delivery options coming soon!')">See Delivery Options</button>
+            </div>
+        </div>
+
+        <!-- Discount Slider -->
+        <div class="discount-slider-container fade-in">
+            <div class="discount-slider" id="discountSlider">
+                <div class="discount-slide">
+                    <h2>🎉 20% OFF Spaghetti!</h2>
+                    <p>Order your favorite spaghetti today and enjoy a 20% discount. Limited time only!</p>
+                    <button onclick="alert('Order functionality coming soon!')">Order Now</button>
+                </div>
+                <div class="discount-slide">
+                    <h2>🔥 Buy 1 Get 1 Free Burger</h2>
+                    <p>Grab your delicious burger and get another one free. Offer ends this week!</p>
+                    <button onclick="alert('Deal functionality coming soon!')">Grab Deal</button>
+                </div>
+                <div class="discount-slide">
+                    <h2>🍗 15% OFF All Chicken Meals</h2>
+                    <p>Treat yourself to our juicy chicken meals at a discounted price. Hurry!</p>
+                    <button onclick="alert('Menu functionality coming soon!')">View Menu</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer fade-in">
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> support@sivanfood.com</p>
+                <p><strong>Phone:</strong> +234 705 888 3682</p>
+            </div>
+
+            <div class="footer-section address">
+                <h3>Our Address</h3>
+                <p>35, Opposite Apex Tech</p>
+                <p>Ilorin, Kwara State</p>
+                <p>Nigeria</p>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="button" onclick="alert('Newsletter subscription coming soon!')">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 SivanFood. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    
+
+ <button onclick="scrollToTop()" class="scroll-top-btn" id="scrollBtn" title="Back to Top">↑</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Center – SivanFood</title>
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+   <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/kgqwH1Wy/20250423-185443.png" alt="SivanFood Logo" height="50px">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">Help Center</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">Help Center</a></li>
+        </ul>
+    </nav>
+
+    <!-- FAQ Container -->
+    <main class="faq-container">
+        <h1>Help Center</h1>
+
+        <div class="faq-item">
+            <button class="question">
+                How long does delivery take?
+                <span class="arrow">▸</span>
+            </button>
+            <div class="answer">
+                <p>Standard delivery arrives within 8 hours. Instant delivery is immediately delivered after order. Customer location also determines how long the delivery will take.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                What are your payment options?
+                <span class="arrow">▸</span>
+            </button>
+            <div class="answer">
+                <p>We accept Credit/Debit cards, PayPal, and Cash on Delivery.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                Can I cancel or modify my order?
+                <span class="arrow">▸</span>
+            </button>
+            <div class="answer">
+                <p>Yes, you can cancel or modify within 20 minutes of placing your order by contacting us via the Contact page.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                Do you offer refunds?
+                <span class="arrow">▸</span>
+            </button>
+            <div class="answer">
+                <p>If you're unsatisfied, contact us within 24 hours for a full refund or replacement. Terms & Conditions apply.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                How can I contact you?
+                <span class="arrow">▸</span>
+            </button>
+            <div class="answer">
+                <p>You can contact SivanFood via our email support@sivanfood.com or WhatsApp +234 705 883 6821.</p>
+            </div>
+        </div>
+
+        <div class="help-section">
+            <h3>Still need help?</h3>
+            <p>Can't find the answer you're looking for? Our support team is here to help!</p>
+            <a href="contact.html" class="help-btn">Contact Support</a>
+        </div>
+  </main>
+
+  <script src="faq.js"></script>
+</body>
+</html>
